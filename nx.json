@@ -1,28 +1,15 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "affected": {
-    "defaultBase": "master"
-  },
-  "workspaceLayout": {
-    "projectNameAndRootFormat": "as-provided"
-  },
+  "affected": { "defaultBase": "master" },
+  "workspaceLayout": { "projectNameAndRootFormat": "as-provided" },
   "targetDefaults": {
-    "build": {
-      "dependsOn": ["^build"],
-      "inputs": ["production", "^production"],
-      "cache": true
-    },
-    "test": {
-      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"],
-      "cache": true
-    },
+    "build": { "dependsOn": ["^build"], "inputs": ["production", "^production"], "cache": true },
+    "test": { "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"], "cache": true },
     "lint": {
       "inputs": ["default", "{workspaceRoot}/.eslintrc.json", "{workspaceRoot}/.eslintignore", "{workspaceRoot}/eslint.config.js"],
       "cache": true
     },
-    "e2e": {
-      "cache": true
-    }
+    "e2e": { "cache": true }
   },
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
@@ -38,5 +25,5 @@
     ],
     "sharedGlobals": []
   },
-  "nxCloudAccessToken": "YjBiZGYzNjQtMTU1ZS00NjY2LWFhN2EtNzJiNmE5ZTEzYTVifHJlYWQ="
+  "nxCloudAccessToken": "ODczY2RmZTItYmJjYS00ZjI5LWIyNDAtN2U1NjM1MWVkMTJmfHJlYWQtd3JpdGU="
 }
